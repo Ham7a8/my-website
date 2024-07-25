@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Code Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1A3636;
+            color: #D6BD98;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #40534C;
+            color: #D6BD98;
+            padding: 1.5em 10%;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+        }
+        .icon-container {
+            display: flex;
+            gap: 15px;
+        }
+        .icon-container i {
+            font-size: 24px;
+            color: #D6BD98;
+            transition: color 0.3s;
+        }
+        .icon-container i:hover {
+            color: #677D6A;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #40534C;
+            border: 1px solid #677D6A;
+            border-radius: 15px;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(103, 125, 106, 0.7);
+            background-color: #677D6A;
+            color: #D6BD98;
+        }
+        h2 {
+            color: #D6BD98;
+            font-size: 1.75em;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            flex-grow: 1;
+        }
+        a {
+            color: #D6BD98;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            background-color: #1A3636;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1em;
+            align-self: flex-start;
+        }
+        .button:hover {
+            background-color: #D6BD98;
+            color: #1A3636;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #40534C;
+            color: #D6BD98;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s ease-out forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>My Code Projects</h1>
+        <div class="icon-container">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" style="font-size:42px"></i>
+            </a>
+            <a href="https://github.com/Ham7a8" target="_blank">
+                <i class="fa fa-github" style="font-size:42px"></i>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card slide-up" style="--i: 1;">
+            <h2>Pixel Runner</h2>
+            <p>A fun and challenging pixel art platformer game.</p>
+            <a href="https://github.com/Ham7a8/pixel-runner" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 2;">
+            <h2>Tic-Tac-Toe</h2>
+            <p>A classic game of Tic-Tac-Toe implemented in JavaScript.</p>
+            <a href="https://github.com/Ham7a8/Tic-Tac-Toe" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 3;">
+            <h2>Ping Pong with a Twist</h2>
+            <p>An innovative twist on the classic Ping Pong game.</p>
+            <a href="https://github.com/Ham7a8/Ping-pong-but-with-a-twist" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 4;">
+            <h2>First Project</h2>
+            <p>My very first coding project, a basic introduction to programming.</p>
+            <a href="https://github.com/Ham7a8/First" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 5;">
+            <h2>Platformer GOTOD</h2>
+            <p>A thrilling platformer game with intricate levels and challenges.</p>
+            <a href="https://github.com/Ham7a8/platformerGOTOD" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 6;">
+            <h2>Face Detection with Python</h2>
+            <p>An AI-powered face detection tool built using Python.</p>
+            <a href="https://github.com/Ham7a8/face-detection-python-" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 7;">
+            <h2>Message Encryption/Decryption Tool</h2>
+            <p>A secure tool for encrypting and decrypting messages.</p>
+            <a href="https://github.com/Ham7a8/Message-Encryption-Decryption-Tool" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 8;">
+            <h2>Guess Game</h2>
+            <p>A fun guessing game where you have to find the hidden number.</p>
+            <a href="https://github.com/Ham7a8/guess-game" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 9;">
+            <h2>Reddit API</h2>
+            <p>A tool for interacting with the Reddit API to fetch posts and comments.</p>
+            <a href="https://github.com/Ham7a8/reddit-api" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 10;">
+            <h2>Chat Export</h2>
+            <p>A script to export chat logs for analysis and storage.</p>
+            <a href="https://github.com/Ham7a8/chat-export" class="button">View Project</a>
+        </div>
+        <div class="card slide-up" style="--i: 11;">
+            <h2>Ping Bird</h2>
+            <p>A simple yet addictive bird game inspired by Flappy Bird.</p>
+            <a href="https://github.com/Ham7a8/ping-bird" class="button">View Project</a>
+        </div>
+    </div>
+    <footer class="fade-in">
+        <div class="container">
+            <p>My Code Projects &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
